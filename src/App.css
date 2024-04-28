@@ -1,0 +1,103 @@
+body {
+  font-family: sans-serif;
+}
+
+.info {
+  margin: 5%;
+  padding: 2rem;
+  border-radius: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content:first baseline;
+  background-color: #55a5fa;
+  color: white;
+}
+
+.input-name {
+  margin-top: 0.5rem;
+  width: 30%;
+  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+  height: 30%;
+  font-size: 1.05rem;
+  border: none;
+  border-radius: 0.4rem;
+  color: white;
+  background-color: #8ec5ff;
+}
+::-webkit-input-placeholder {
+  color: white;
+  opacity: 0.6;
+}
+:focus::-webkit-input-placeholder {
+  opacity: 0.4;
+}
+
+.input-name:focus {
+  outline: none;
+}
+
+h2 {
+  margin: 0.5rem;
+  padding: 2rem;
+  color: #007bff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stepper {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step-number {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #e9e9e9;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+  z-index: 2;
+}
+
+.step-name {
+  font-size: 1.2rem;
+}
+
+.active .step-number {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.complete .step-number {
+  background-color: #00ff0d;
+  /* background-color: #28a745; */
+  color: #fff;
+}
+
+.progress-bar {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  height: 4px;
+  background-color: #ccc;
+}
+
+.progress {
+  height: 100%;
+  background-color: #28a745;
+  transition: 0.2s ease;
+}

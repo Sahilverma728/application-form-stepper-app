@@ -1,0 +1,16 @@
+.btn {
+    margin-left: 5%;
+    transform: translate(0, -300%);
+    background-color: #007bff;
+    border: none;
+    border-radius: 0.4rem;
+    color: white;
+    font-size: 1.2rem;
+    transition: 0.5s;
+}
+.btn:hover  {
+    background-color: #0059b8;
+    /* box-shadow: 0px 0px 50px 5px red; */
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+}
